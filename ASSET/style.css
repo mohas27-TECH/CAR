@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+}
+.home h1{
+    font: 1em sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.home h4{
+    font-size: 13px;
+    font-weight: lighter;
+}
+.home button{
+    background-color: rgb(110, 110, 115);
+    color: white;
+    border: none;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 20px;
+}
+img{
+    width: 500px;
+}
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.about .content {
+  flex: 1;
+}
+
+/* .about h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+} */
+
+.about .animate-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+/* .about button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about button:hover {
+  background-color: #ccc;
+} */
+
+/* .about .image {
+  margin-top: -800px;
+  margin-left: -300px;
+  flex: 1;
+  text-align: right;
+}
+
+.about .image img {
+  max-width: 90%;
+  border-radius: 10px;
+  animation: zoomIn 1.5s ease-in-out;
+} */
+
+
+  
+    .carousel {
+      position: relative;
+      width: 500px;
+      height: 400px;
+      margin-left: 900px;
+      margin-top: -300px;
+    }
+    .carousel img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      animation: rotate 6s linear infinite;
+      opacity: 0;
+    }
+    .carousel img:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .carousel img:nth-child(2) {
+      animation-delay: 2s;
+    }
+    .carousel img:nth-child(3) {
+      animation-delay: 4s;
+    }
+
+    @keyframes rotate {
+      0% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      33% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      66% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.boo{
+  margin-left: 100px;
+  font-family: sans-serif;
+
+}
+label{
+  margin-left: 50px;
+}
+input{
+  margin-left: 100px;
+  border: none;
+  border-radius: 20px;
+  width: 500px;
+  height: 50px;
+}
